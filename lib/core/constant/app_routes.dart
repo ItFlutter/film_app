@@ -1,4 +1,6 @@
 class AppRoutes {
-  // ========== Home ================================== //
-  static const String home = "/homepageview";
+  // ================================= ShowAnimatedText ================================== //
+  static const String showanimatedtext = "/showanimatedtext";
+  // ================================= DiscoveringFilms ================================== //
+  static const String discoveringfilms = "/discoveringfilms";
 }

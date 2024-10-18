@@ -1,9 +1,9 @@
 import "package:flutter/material.dart";
 import 'app_colors.dart';
 
-ThemeData appTheme = ThemeData.light().copyWith(
+ThemeData appTheme = ThemeData(
+  fontFamily: "Lora",
   scaffoldBackgroundColor: AppColors.backgroundColor,
-
   // canvasColor: AppColors.backgroundColor,
   // primaryColorLight: AppColors.backgroundColor,
   // focusColor: Colors.yellow,
@@ -14,11 +14,11 @@ ThemeData appTheme = ThemeData.light().copyWith(
     elevation: 0,
     iconTheme: IconThemeData(color: AppColors.white),
     titleTextStyle: TextStyle(
-        // color: AppColors.primaryColor,
-        color: AppColors.white,
-        fontWeight: FontWeight.bold,
-        fontSize: 24,
-        fontFamily: "Lora"),
+      // color: AppColors.primaryColor,
+      color: AppColors.white,
+      fontWeight: FontWeight.bold,
+      fontSize: 24,
+    ),
   ),
 );
 // import "package:flutter/material.dart";

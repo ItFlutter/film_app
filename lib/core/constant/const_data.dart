@@ -1,4 +1,11 @@
+import 'package:film_app/core/constant/app_colors.dart';
+import 'package:flutter/material.dart';
+
 class ConstData {
+  static const gradient = LinearGradient(
+      colors: [AppColors.beginLinear, AppColors.endLinear],
+      begin: Alignment.topLeft,
+      end: Alignment.bottomRight);
   // static bool isLogin = false;
   // static String fcmToken =
   //     "eq4N6D5aT0KCV4kvvpuGi7:APA91bFStIt7CSErAV7UL-mQD6fj1HslhHAhB-j7Fv08z5ODlg0V_rPVpZ_fTJiLVTyP7nziIdEX-shk0VLkoz-PECTj8wp_542GTgDIf6bU9-408mjLWCmUTkZCKYONkSIMF_W3ZJQA";

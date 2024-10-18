@@ -1,7 +1,9 @@
-import 'package:film_app/Features/homepage/presentation/views/home_page_view.dart';
+import 'package:film_app/routes.dart';
+import 'package:film_app/view/screen/homepage/screen/home_page_view.dart';
 import 'package:film_app/core/constant/app_themes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,8 +19,9 @@ class MyApp extends StatelessWidget {
         minTextAdapt: true,
         splitScreenMode: true,
         builder: (_, child) {
-          return MaterialApp(
+          return GetMaterialApp(
             theme: appTheme,
+            getPages: routes,
             debugShowCheckedModeBanner: false,
             home: const HomePageView(),
           );
